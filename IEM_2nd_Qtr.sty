@@ -1,0 +1,74 @@
+\ProvidesPackage{IEM_2nd_Qtr}
+
+\usepackage{graphicx}
+\graphicspath{{./images/}}
+\usepackage{wrapfig}
+\usepackage{pdfpages,caption,geometry} %enables you to add pdf and a caption
+
+\usepackage{geometry}
+\geometry{
+  a4paper,
+  total={170mm,257mm},
+  left=20mm,
+  top=40mm,
+  bottom=30mm,
+}
+
+\usepackage{color, colortbl}
+\definecolor{Gray}{RGB}{220,220,220}
+
+\usepackage[dvipsnames]{xcolor}
+\definecolor{OMDTZblue}{RGB}{0, 166, 225}
+\definecolor{OMDTZyellow}{RGB}{253, 214, 14}
+\definecolor{OMDTZgreen}{RGB}{19, 186, 42}
+
+\usepackage{sectsty}
+\sectionfont{\color{OMDTZblue}} 
+\subsectionfont{\color{OMDTZblue}}
+\subsubsectionfont{\color{OMDTZblue}}
+
+\usepackage{caption}
+\usepackage[font={color=OMDTZgreen,small,bf},figurename=Fig.,labelfont={small,it}]{caption}
+\usepackage{subcaption} 
+
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{multirow}
+\usepackage{multicol} % Allows multiple columns to be used on the fly
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\color{black} \leftmark}
+\rhead{\color{black} \rightmark}
+\fancyfoot[LE]{\color{black} \thepage \hspace{5mm} \scriptsize Innovation Ecosystem Map---1st Quarter Report}
+\fancyfoot[RO]{\color{black} \scriptsize Innovation Ecosystem Map---1st Quarter Report \hspace{3mm} \normalsize \thepage}
+
+\newcommand*{\vcenteredhbox}[1]{\begingroup
+\setbox0=\hbox{#1}\parbox{\wd0}{\box0}\endgroup} % For creating vertically centered rows of logos
+
+\setcounter{tocdepth}{2} % Table of Contents includes only sections and subsections, not subsubsections.
+
+\usepackage[framemethod=tikz]{mdframed}% adding a shadow to a text for emphasis
+\usepackage{lipsum}
+
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=OMDTZblue, % to match the OMDTZblue text
+  filecolor=magenta,      
+  urlcolor=cyan,
+  pdftitle={Innovation Ecosystem Map---1st Quarter Report},
+  bookmarks=true,
+  %pdfpagemode=FullScreen,
+}
+%\urlstyle{same}
+
+
+\usepackage[english,ngerman]{babel}
+\usepackage[T1]{fontenc}% font package
+
+\usepackage[scale=1]{helvet} % or tgheros
+\renewcommand{\familydefault}{\sfdefault}
+
+\usepackage{bbding}% used for adding symbols e.g. checkmark
